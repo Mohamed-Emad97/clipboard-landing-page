@@ -1,0 +1,35 @@
+@use "../../variblies.scss" as *;
+
+//Rules
+footer{
+    background-color: rgba($Grayish-Blue, 0.1);
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $Dark-Grayish-Blue;
+                font-weight: 600;
+                transition: color ease 1s;
+                &:hover{
+                    color: $Strong-Cyan;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    footer{
+        .img{
+            text-align: center;
+        }
+        ul{
+            li{
+            text-align: center;
+            }
+        }
+        .social{
+            justify-content: center;
+        }
+    }
+}

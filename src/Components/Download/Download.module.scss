@@ -1,0 +1,13 @@
+@use "../../variblies.scss" as *;
+@use "../../Mixin.scss" as *;
+
+//Rules
+.btns{
+    justify-content: center;
+    .btnMain{
+        @include btnStyle($Strong-Cyan, rgba($Strong-Cyan, 0.5));
+    }
+    .btnSec{
+        @include btnStyle($Light-Blue, rgba($Light-Blue, 0.5));
+    }
+}

@@ -1,0 +1,28 @@
+@use "../../variblies.scss" as *;
+@use '../../Mixin.scss' as *;
+
+//Rules
+#about{
+    overflow: hidden;
+    .img{
+        position: relative;
+        left: -50px;
+    }
+    .content{
+        height: 100%;
+        padding: 2rem;
+        .txt{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    #about{
+        .img{
+            left: auto;
+        }
+    }
+}

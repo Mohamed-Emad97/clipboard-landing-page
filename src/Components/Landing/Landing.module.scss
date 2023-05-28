@@ -1,0 +1,38 @@
+@use "../../variblies.scss" as *;
+@use "../../Mixin.scss" as *;
+
+//Rules
+#landing{
+    background-image: url(../../assets/images/bg-header-desktop.png);
+    background-size: cover;
+    height: 100vh;
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        .title{
+            h1{
+                color: $Dark-Grayish-Blue;
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+                color: $Grayish-Blue;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 676px) {
+    #landing{
+        height: auto;
+        background-image: url(../../assets/images/bg-header-mobile.png);
+        padding: 20px 0;
+        .center{
+            height: auto !important;
+        }
+    }
+} 

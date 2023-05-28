@@ -1,0 +1,14 @@
+@use "../../variblies.scss" as *;
+
+//Rules
+.title{
+    h2{
+        color: $Dark-Grayish-Blue;
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: $Grayish-Blue;
+        white-space: pre-line;
+    }
+}

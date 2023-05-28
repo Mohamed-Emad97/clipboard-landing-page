@@ -1,0 +1,16 @@
+@use "./variblies.scss" as *;
+
+@mixin btnStyle ($bg, $bgHover) {
+    background-color: $bg;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    box-shadow: -1px 17px 37px -18px rgba(0,0,0,0.8);
+    -webkit-box-shadow: -1px 17px 37px -18px rgba(0,0,0,0.8);
+    -moz-box-shadow: -1px 17px 37px -18px rgba(0,0,0,0.8);
+    transition: background-color ease 1s;
+    &:hover{
+        background-color: $bgHover;
+    }
+}
